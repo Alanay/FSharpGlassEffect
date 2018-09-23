@@ -27,7 +27,7 @@ for x in 1 .. w - 2 do
         let dx = int (Math.Floor((n1 - n0) * displacement + 0.5))
         let dy = int (Math.Floor((n2 - n0) * displacement + 0.5))
         let sx = if (x + dx) > 0 && (x + dx) < w then (x + dx) else w - 1
-        let sy = if (y + dy) > 0 && (y + dy) < w then (y + dy) else h - 1
+        let sy = if (y + dy) > 0 && (y + dy) < h then (y + dy) else h - 1
         let color = source.GetPixel(int sx, int sy)
         result.SetPixel(x, y, color)
 
